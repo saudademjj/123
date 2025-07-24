@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Register GSAP plugins
-    gsap.registerPlugin(ScrollTrigger, TextPlugin);
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
 
     // Loading Screen
     const loadingScreen = document.getElementById('loading');
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     duration: 1.5,
                     scrollTo: {
                         y: target,
-                        offsetY: 100
+                        offsetY: 80
                     },
                     ease: 'power3.inOut'
                 });
