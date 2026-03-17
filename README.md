@@ -1,46 +1,41 @@
-# 京城十日志 (Ten Days in Beijing - 叙事交互实验)
+# 京城十日志 (Ten Days in Beijing - 沉浸式叙事交互实验 / Immersive Narrative Interaction Experiment)
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-[![GSAP](https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=white)](https://greensock.com/)
-[![Interactive](https://img.shields.io/badge/Experience-Immersive-FF69B4)](https://saudademjj.github.io/beijing.html)
+本项目是 `saudademjj.github.io` 的一个专项模块，独立于主作品集，旨在通过 GSAP 实现长轴滚动的视差叙事体验。
 
-京城十日志是一个基于现代 Web 动画引擎构建的叙事交互实验。项目尝试通过非线性的视图切换与关联的滚动动效，将传统的城市游记转化为具备视觉深度的数字内容。
+This project is a specialized module of `saudademjj.github.io`, independent of the main portfolio, aimed at exploring immersive parallax storytelling through GSAP-driven long-axis scrolling.
 
-## 核心设计
+## 核心设计 / Core Design
 
-- 交互式叙事: 突破单向展示，利用横轴滚动与视差效果，引导用户在不同页面间流转。
-- 动效编排: 
-    - 集成 GSAP 及其 ScrollTrigger 插件，实现基于滚动条位置的动画轨迹映射。
-    - 结合流体视差效果，构建页面的空间深度。
-- 排版与视觉: 
-    - 结合 Noto Serif SC 与 Noto Sans SC 字体。
-    - 自定义光标交互逻辑，为操作提供视觉反馈。
-- 响应式适配: 针对多种屏幕分辨率进行布局兼容。
+- 沉浸式视差滚动 (Immersive Parallax Scrolling):
+    - 基于 GSAP ScrollTrigger 插件实现的多层偏移。 / Multi-layer offsets using GSAP ScrollTrigger.
+    - 针对长轴内容的视觉节奏控制。 / Visual rhythm control for long-axis content.
 
-## 技术栈
+- 叙事布局 (Narrative Layout):
+    - 结合排版美学与动态入场动效。 / Combining typographic aesthetics with dynamic entry animations.
+    - 使用 Noto Serif SC 营造历史文化氛围。 / Noto Serif SC for cultural atmosphere.
 
-- 架构: HTML5 / CSS3 / ES6+ JavaScript
-- 动画引擎: GSAP
-- 字体服务: Google Fonts (Noto 系列)
+## 技术栈 / Technical Stack
 
-## 项目结构
+- 前端引擎: HTML5, CSS3, ES6+ JavaScript.
+- 核心动画: GSAP 3.x, ScrollTrigger.
+- 视觉资产: 视差图层与响应式图片流.
+
+## 项目结构 / Project Structure
 
 ```text
-.
-├── index.html          # 主入口
-├── styles.css          # 全局样式
-├── script.js           # 动画核心逻辑
+123/
+├── index.html          # 实验项目主入口 / Main entry
+├── styles.css          # 视差与布局样式定义 / Styling
+├── script.js           # 基于 GSAP 的滚动引擎 / GSAP engine
 └── README.md
 ```
 
-## 本地预览
-
-由于项目基于原生 Web 技术构建，可直接在主流浏览器中启动：
+## 本地预览 / Preview
 
 ```bash
-# 或使用 serve
+# 双击 index.html 或使用 http-server 预览
 npx serve .
 ```
 
-## 许可证
-MIT License
+## 许可证 / License
+本项目采用 [MIT License](LICENSE) 协议。 / This project is licensed under the MIT License.
