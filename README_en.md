@@ -10,38 +10,46 @@
 ![GSAP](https://img.shields.io/badge/GSAP-3.12-88CE02?style=flat-square&logo=greensock)
 ![Interactive](https://img.shields.io/badge/Experience-Immersive-FF69B4?style=flat-square)
 
-"Ten Days in Beijing" is an interactive experimental project exploring the boundaries of "depth narrative" within digital media. As a specialized module of saudademjj.github.io, it aims to reconstruct traditional long-axis travelogue content into a cinematic digital experience with spatial depth, powered by the industry-standard GSAP animation engine.
+"Ten Days in Beijing" is an interactive experimental project exploring the boundaries of "depth narrative" within digital media. As a specialized module of saudademjj.github.io, it reconstructs traditional travelogues into a cinematic digital experience with spatial depth, powered by the industry-standard GSAP animation engine.
 
-## Core Design Philosophy
+## 🎨 Core Interaction Design
 
 ### 1. Pixel-Level Scroll Scheduling
-Moving away from traditional one-way page scrolling, the system implements non-linear animation mapping based on the **GSAP ScrollTrigger** plugin. The page's scroll position is abstracted into a timeline variable, precisely controlling the entry timing, movement paths, and opacity gradients of visual elements.
+The system eschews traditional discrete page scrolling in favor of non-linear animation mapping via **GSAP ScrollTrigger**:
+- **Timeline Integration**: Vertical scroll distance is abstracted into a global animation timeline. The entry timing, movement paths, and opacity interpolation of every visual element are precisely driven by the scroll position.
+- **Smooth Interpolation**: Implements a highly responsive feel using `scrub: true`, ensuring the user's scroll rhythm is perfectly synchronized with the animation state.
 
-### 2. Fluid Parallax & Spatial Construction
-Utilizing Fluid Parallax techniques, the system applies differentiated displacement calculation formulas to background, midground, and foreground layers. This constructs a profound sense of visual space within the flat browser viewport, significantly enhancing the immersion of the narrative content.
+### 2. Fluid Parallax & Spatial Modeling
+Constructs a profound visual space through multi-layer displacement techniques:
+- **Multi-layer Parallax Streams**: By setting differentiated displacement ratios for the background (distant mountains), midground (historic architecture), and foreground (text and particles), the project simulates intense perspective depth within a flat viewport.
+- **Visual Focus Steering**: Utilizes dynamic blur and scaling effects to guide the reader's eye across specific visual anchors according to the narrative flow.
 
 ### 3. Textual Aesthetics Engineering
-- **Typography Standards**: Deeply optimized for the Noto Serif SC typeface to create a reading atmosphere with historical weight through rigorous Chinese glyphs.
-- **Tactile Feedback**: Implements a custom high-end cursor interaction system that provides subtle visual feedback for fine mouse movements, increasing the interactive tension between the user and the content.
+- **Serif Atmosphere**: Deeply utilizes the Noto Serif SC typeface to create a sense of historical weight through stable Chinese glyphs.
+- **Tactile Interaction**: Features a custom high-end cursor following logic. The cursor acts as more than just a pointer—it's an interactive anchor with physical inertia that generates subtle visual ripples in response to user movements.
 
-## Technical Architecture Overview
+## ⚙️ Technical Architecture
 
-- **Core Engine**: GSAP 3.12+ / ScrollTrigger / ScrollToPlugin.
-- **Typography**: Noto series fonts hosted via the Google Fonts API.
-- **Visual Optimization**: Features WebP formatting and lazy-loading optimizations for parallax layers to ensure smooth loading performance across long-axis content.
+- **Core Engine**: Native JavaScript driven by the GSAP 3.12+ ecosystem.
+- **Layout Contract**: Employs CSS Variables (Custom Properties) to coordinate parallax weights and color indices globally.
+- **Performance Strategy**: Visual assets are WebP formatted, and `Intersection Observer` is used to optimize memory usage across long-axis content.
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 123/
-├── index.html          # Main container implementation for immersive narrative
-├── styles.css          # Global typography specs, parallax contracts, and keyframe definitions
-├── script.js           # Core animation engine logic and interaction controllers
-└── assets/             # Visual asset directory containing multi-layer parallax slices
+├── index.html          # Main container for the immersive narrative
+├── styles.css          # Global typography, parallax contracts, and motion layers
+├── script.js           # Animation orchestrator and ScrollTrigger core
+├── assets/             # Visual asset directory (parallax-ready slices)
+└── README.md           # Technical specs and design documentation
 ```
 
 ## Preview
-As this project is based on a native architecture, it can be previewed directly via any static HTTP server.
+As this project is based on native Web tech, it can be launched via any static HTTP server:
+```bash
+npx serve .
+```
 
 ## License
-This project follows the MIT License protocol.
+MIT License
