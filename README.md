@@ -1,69 +1,53 @@
-[English](README_en.md) | 简体中文
+# 京城十日志 (Ten Days in Beijing - 沉浸式叙事交互实验)
 
-# 京城十日志
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[![GSAP](https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=white)](https://greensock.com/)
+[![Interactive](https://img.shields.io/badge/Experience-Immersive-FF69B4)](https://saudademjj.github.io/beijing.html)
 
+京城十日志是一个基于现代 Web 动画引擎构建的沉浸式叙事交互实验项目。项目旨在通过非线性的视觉流转与深度关联的滚动动效，将传统的城市游记升华为一场具备电影质感的数字艺术体验。
 
-`京城十日志` 是一个纯前端静态展示页，围绕“北京十日深度文化行程”这一主题进行视觉化叙事。项目强调沉浸式首屏、滚动驱动动画、行程卡片编排和具有展陈感的页面节奏，适合做旅游专题页、作品集练习或静态页面设计参考。
+## 核心设计理念
 
-## 功能特性
-
-- 沉浸式首屏与加载过渡动画
-- 行前筹谋信息卡片，覆盖预约、交通、餐饮、住宿与行李建议
-- 10 天行程内容模块化展示
-- 滚动进度条、数字计数器和视差感动画
-- 自定义鼠标与悬浮交互效果
-- 适配移动端浏览体验
+- 深度交互式叙事: 突破传统的单向信息传递，利用横轴滚动与长焦视差效果，引导读者主动探索城市文化的深层脉络。
+- 高级动效编排: 
+    - 集成 GSAP 及其 ScrollTrigger 插件，实现像素级的关键帧控制与基于滚动的动画轨迹映射。
+    - 结合流体视差 (Fluid Parallax) 与动态层深渲染，打造虚实结合的数字化视觉景观。
+- 文本美学工程: 
+    - 严谨的排版标准，深度结合 Noto 系列衬线与非衬线字体，平衡了信息的传递效率与视觉艺术感。
+    - 自定义的高级光标交互体系，为细微的操作动作提供细腻的触觉化反馈。
+- 全平台响应式兼容: 适配多样化的屏幕纵横比，确保在不同分辨率下都能保持叙事空间的完整性与艺术一致性。
 
 ## 技术栈
 
-- `HTML5`
-- `CSS3`
-- `Vanilla JavaScript`
-- `GSAP`（通过 CDN 引入 `ScrollTrigger`、`ScrollToPlugin`、`TextPlugin`）
+- 核心架构: HTML5 / CSS3 / ES6+ JavaScript
+- 动画引擎: GSAP (GreenSock Animation Platform)
+- 扩展插件: ScrollTrigger, ScrollToPlugin, TextPlugin
+- 字体服务: Google Fonts (Noto Serif SC / Noto Sans SC)
+
+## 项目结构
+
+```text
+.
+├── index.html          # 沉浸式交互主页面入口
+├── styles.css          # 全局视觉样式与动效契约定义
+├── script.js           # 基于 GSAP 实现的动画核心引擎
+└── README.md
+```
 
 ## 本地预览
 
-项目无需构建，直接启动静态服务器即可：
+由于项目基于原生 Web 技术构建，可直接在主流浏览器中启动：
 
 ```bash
-git clone https://github.com/saudademjj/123.git
-cd 123
-python3 -m http.server 8080
+# 若已安装 serve
+npx serve .
 ```
 
-打开 `http://localhost:8080`
-
-## 目录结构
-
-```text
-123/
-├── index.html
-├── styles.css
-├── script.js
-├── README.md
-└── README.en.md
-```
-
-## 自定义建议
-
-- 页面文案：修改 `index.html`
-- 视觉主题：调整 `styles.css` 中的 `:root` 变量
-- 动画节奏：编辑 `script.js` 中的 `gsap.timeline` 和 `ScrollTrigger` 配置
-
-## 部署方式
-
-可直接部署到任意静态托管平台：
-
-- GitHub Pages
-- Vercel
-- Netlify
-- Nginx 静态目录
-
-## 使用提示
-
-- 若动画未生效，请确认本地网络可以访问 GSAP CDN
-- 不建议直接双击打开 `index.html`，最好通过本地 HTTP 服务访问
+## 设计哲学
+“将滚动视为时间轴的演进，将屏幕视为空间的延展。” 本项目强调技术对内容的深度赋能，致力于在数字媒介中重构“游记”的感知维度。
 
 ## 许可证
+本项目采用 MIT License 协议。
 
-本仓库采用 MIT License，详见 [LICENSE](./LICENSE)。
+---
+Developed by [saudademjj](https://github.com/saudademjj)
