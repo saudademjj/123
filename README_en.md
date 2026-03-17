@@ -1,6 +1,7 @@
+English | [简体中文](README.md)
+
 # Beijing in Ten Days
 
-English | [简体中文](README.md)
 
 `Beijing in Ten Days` is a static front-end showcase page built around a curated 10-day cultural itinerary in Beijing. The project focuses on immersive visual storytelling, scroll-based motion, itinerary cards, and a polished presentation style that works well for portfolio pieces, travel landing pages, or visual design experiments.
 
