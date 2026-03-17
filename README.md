@@ -1,30 +1,28 @@
-# 京城十日志（静态网页）
+# 京城十日志
 
-一个纯前端静态页面项目，主题是「北京十日深度文化行程」。页面包含沉浸式视觉设计、滚动动画、行程卡片与统计计数器，适合用作旅游展示页或视觉练习作品。
+[English README](./README.en.md)
 
-## 主要功能
+`京城十日志` 是一个纯前端静态展示页，围绕“北京十日深度文化行程”这一主题进行视觉化叙事。项目强调沉浸式首屏、滚动驱动动画、行程卡片编排和具有展陈感的页面节奏，适合做旅游专题页、作品集练习或静态页面设计参考。
 
-- 沉浸式首屏（加载动画、渐入文案、滚动引导）
-- 行前筹谋信息卡（预约、交通、餐饮、住宿、安全、行李）
-- 10 天行程卡片（按天展示，含亮点与建议）
-- 滚动进度条、数字计数动画、视差背景
-- 自定义鼠标光标与交互悬浮效果
-- 全中文内容与移动端适配
+## 功能特性
+
+- 沉浸式首屏与加载过渡动画
+- 行前筹谋信息卡片，覆盖预约、交通、餐饮、住宿与行李建议
+- 10 天行程内容模块化展示
+- 滚动进度条、数字计数器和视差感动画
+- 自定义鼠标与悬浮交互效果
+- 适配移动端浏览体验
 
 ## 技术栈
 
 - `HTML5`
-- `CSS3`（变量、渐变、响应式布局）
+- `CSS3`
 - `Vanilla JavaScript`
-- `GSAP`（通过 CDN 引入）
-  - `gsap`
-  - `ScrollTrigger`
-  - `ScrollToPlugin`
-  - `TextPlugin`
+- `GSAP`（通过 CDN 引入 `ScrollTrigger`、`ScrollToPlugin`、`TextPlugin`）
 
-## 本地运行
+## 本地预览
 
-本项目无构建步骤，直接启动静态服务器即可：
+项目无需构建，直接启动静态服务器即可：
 
 ```bash
 git clone https://github.com/saudademjj/123.git
@@ -32,25 +30,26 @@ cd 123
 python3 -m http.server 8080
 ```
 
-浏览器访问：`http://localhost:8080`
+打开 `http://localhost:8080`
 
 ## 目录结构
 
 ```text
 123/
-├── index.html     # 页面结构与内容
-├── styles.css     # 样式与主题变量
-├── script.js      # 动画与交互逻辑
-└── README.md
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+└── README.en.md
 ```
 
-## 定制指南
+## 自定义建议
 
-- 修改行程内容：编辑 `index.html` 中各 `day-card` 区块。
-- 修改视觉风格：编辑 `styles.css` 顶部 `:root` 颜色变量。
-- 修改动画节奏：编辑 `script.js` 中 `gsap.timeline` 与 `ScrollTrigger` 配置。
+- 页面文案：修改 `index.html`
+- 视觉主题：调整 `styles.css` 中的 `:root` 变量
+- 动画节奏：编辑 `script.js` 中的 `gsap.timeline` 和 `ScrollTrigger` 配置
 
-## 部署建议
+## 部署方式
 
 可直接部署到任意静态托管平台：
 
@@ -59,14 +58,11 @@ python3 -m http.server 8080
 - Netlify
 - Nginx 静态目录
 
-## 常见问题
+## 使用提示
 
-1. 页面动画未生效
-- 检查网络是否可访问 CDN（GSAP 依赖在线加载）。
-
-2. 本地双击 `index.html` 打开效果异常
-- 建议使用本地 HTTP 服务（如 `python3 -m http.server`），不要直接用 `file://`。
+- 若动画未生效，请确认本地网络可以访问 GSAP CDN
+- 不建议直接双击打开 `index.html`，最好通过本地 HTTP 服务访问
 
 ## 许可证
 
-当前仓库未显式提供 License 文件，如需开源发布建议补充 `LICENSE`。
+本仓库采用 MIT License，详见 [LICENSE](./LICENSE)。
