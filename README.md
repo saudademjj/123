@@ -1,8 +1,6 @@
-<a id="readme-top"></a>
-
 # 京城十日志
 
-<p align="right">中文 | <a href="#english-version">English</a></p>
+<p align="right">中文 | <a href="https://github.com/saudademjj/123/tree/codex/readme-en">English</a></p>
 
 `京城十日志` 是一个纯前端静态展示页，围绕“北京十日深度文化行程”这一主题进行视觉化叙事。项目强调沉浸式首屏、滚动驱动动画、行程卡片编排和具有展陈感的页面节奏，适合做旅游专题页、作品集练习或静态页面设计参考。
 
@@ -68,69 +66,3 @@ python3 -m http.server 8080
 ## 许可证
 
 本仓库采用 MIT License，详见 [LICENSE](./LICENSE)。
-
----
-
-## English Version
-
-<p align="right"><a href="#readme-top">中文</a> | English</p>
-
-`Beijing in Ten Days` is a static front-end showcase page built around a curated 10-day cultural itinerary in Beijing. The project focuses on immersive visual storytelling, scroll-based motion, itinerary cards, and a polished presentation style that works well for portfolio pieces, travel landing pages, or visual design experiments.
-
-## Features
-
-- Cinematic hero section with a loading transition
-- Pre-trip planning cards for reservations, transit, food, lodging, and packing
-- A modular 10-day itinerary presentation
-- Scroll progress bar, animated counters, and parallax-inspired motion
-- Custom cursor and hover interactions
-- Mobile-friendly responsive layout
-
-## Tech Stack
-
-- `HTML5`
-- `CSS3`
-- `Vanilla JavaScript`
-- `GSAP` loaded from CDN with `ScrollTrigger`, `ScrollToPlugin`, and `TextPlugin`
-
-## Run Locally
-
-No build step is required. Start a static file server:
-
-```bash
-git clone https://github.com/saudademjj/123.git
-cd 123
-python3 -m http.server 8080
-```
-
-Then open `http://localhost:8080`
-
-## Structure
-
-```text
-123/
-├── index.html
-├── styles.css
-├── script.js
-├── README.md
-└── README.en.md
-```
-
-## Customization
-
-- Edit `index.html` to change the itinerary content
-- Update `styles.css` root variables to retheme the page
-- Tweak GSAP timelines and triggers in `script.js`
-
-## Deployment
-
-This project can be deployed directly to:
-
-- GitHub Pages
-- Vercel
-- Netlify
-- Any static Nginx directory
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](./LICENSE).
