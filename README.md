@@ -1,10 +1,8 @@
+<a id="readme-top"></a>
+
 # 京城十日志
 
-**Language:** [Chinese](#chinese-version) | [English](#english-version)
-
-## Chinese Version
-
-**Language:** Chinese | [English](#english-version)
+<p align="right">中文 | <a href="#english-version">English</a></p>
 
 `京城十日志` 是一个纯前端静态展示页，围绕“北京十日深度文化行程”这一主题进行视觉化叙事。项目强调沉浸式首屏、滚动驱动动画、行程卡片编排和具有展陈感的页面节奏，适合做旅游专题页、作品集练习或静态页面设计参考。
 
@@ -75,7 +73,7 @@ python3 -m http.server 8080
 
 ## English Version
 
-**Language:** [Chinese](#chinese-version) | English
+<p align="right"><a href="#readme-top">中文</a> | English</p>
 
 `Beijing in Ten Days` is a static front-end showcase page built around a curated 10-day cultural itinerary in Beijing. The project focuses on immersive visual storytelling, scroll-based motion, itinerary cards, and a polished presentation style that works well for portfolio pieces, travel landing pages, or visual design experiments.
 
